@@ -1,32 +1,32 @@
-# 关系记录：按用途留下可继续的依据
+# Relationship records: preserving a basis for further use
 
-记录服务当前判断和继续使用，不是强制表格。优先保留具体对象、原件或过程及其作用；来源链接使用当前项目可取得的位置，缺失材料标明，不靠旧摘要冒充原件。
+A record serves current judgment and further use; it is not a mandatory form. Prioritize concrete objects, source material or processes, and their roles. Link to sources available in the current project. Identify missing material rather than presenting an old summary as the original.
 
-可按需要留下这些联系：
+Preserve these connections when useful:
 
 ```text
-当前用途 → 对象与关系 → 材料及观察范围
-                         ↘ 推论、作者补入、替代解释
-关系依据 → 本次计划 → 具体内容与预期后果
-实际结果或反馈 → 被改变的理解 → 直接影响与未受影响范围
+Current use → objects and relationships → material and scope of observation
+                                        ↘ inferences, author additions, alternatives
+Relational basis → current plan → concrete content and expected consequences
+Actual results or feedback → changed understanding → direct effects and unaffected scope
 ```
 
-箭头表示可以回查的联系，不是固定流水线。缺少一条记录只表示未说明，不证明没有影响。若去掉实例后只剩“现代、舒适、科技”，保留的信息通常不足以指导当前设计。
+The arrows indicate traceable connections, not a fixed production line. A missing record means the connection has not been stated; it does not prove there was no effect. If removing the examples leaves only words such as "modern," "comfortable," and "technological," the retained information is usually insufficient to guide the current design.
 
-## 示例：局部价值与整体失配
+## Example: local value and a mismatch in the whole
 
-对象是候选界面与场地组合，用途是常态对局。示例设定的反馈分别认可界面组织的探索价值，并指出界面与场地不协调；两项判断同时保留，不把它们平均成整体合格，也不补出每个组件都获认可。
+The object is a candidate combination of a game interface and setting, intended for regular gameplay. The feedback constructed for this example recognizes the value of exploring the interface arrangement while identifying a mismatch between the interface and the setting. Retain both judgments. Do not average them into an overall pass or infer that every component has been endorsed.
 
-受影响的是整图可作母版的推论及依赖它的计划。应重新看界面与场地的构成、观看与动作关系，而非冻结界面后只换颜色。局部探索价值仍在；“同色即可统一”是作者候选，不是用户审美要求，不永久禁止自然场地。
+What changes is the inference that the whole image can serve as a template, along with the plan that depends on it. Reexamine how the interface and setting are composed, viewed, and used in action; changing colors around a frozen interface is insufficient. The local exploratory value remains. "Matching colors will unify them" is an author-proposed candidate, not the user's aesthetic requirement. It does not permanently rule out natural settings.
 
-## 示例：尚在形成的联系
+## Example: a connection still taking shape
 
-在研究双方如何共同工作时，出现“真实参与可能改变问题，而不只是提供答案”的候选联系。记录当时发生的活动、参与者表达和不同解释；若部分解释获认可而仍未覆盖所指，同时保留其局部价值及开放部分。
+During research into how two parties can work together, a possible connection emerges: "Actual participation may change the question rather than merely provide an answer." Record the activity that occurred, what participants expressed, and the different interpretations. If an interpretation is partly accepted but does not yet cover what was meant, retain both its local value and what remains open.
 
-名称已出现不等于完整理解已经形成；表达不完整也不证明参与者内部已有一份完整定义。后续可比较具体活动怎样改变对象、依据与问题。若当前任务已收束为自主整理，不把新的真人操作列成默认待补。
+The appearance of a name does not mean a complete understanding has formed. An incomplete expression does not establish that a participant already has a complete internal definition, either. Later work can compare how particular activities change the object, basis, and question. If the current task has been narrowed to autonomous consolidation, do not add further human actions as a default requirement.
 
-## 返回记录要写清什么
+## What a feedback record should make clear
 
-记录反馈来源、必要上下文及它改变的对象、关系或范围；概念、计划和内容分别说明实际修订，未受影响的作用继续保留。作者规则修订、对旧理解的反驳、当前新偏好与实施失误有不同来路，不一律写成概念错误。
+Record the feedback's source, necessary context, and the objects, relationships, or scope it changes. State actual revisions to the concepts, plan, and content separately. Retain unaffected roles. A rule revision by the author, a challenge to an earlier understanding, a new current preference, and an implementation mistake have different origins; do not describe them all as conceptual errors.
 
-完整有限路径和许可/事件区别见[工作案例](worked-example.md)；关系展开依据见[概念与工作模型](concept-and-model.md)。
+See the [worked example](worked-example.md) for a complete bounded path and the distinction between permission and events. See [Concepts and the working model](concept-and-model.md) for a basis for developing relationships further.

@@ -1,38 +1,38 @@
-# 概念与工作模型
+# Concepts and the working model
 
-本参考保留可复用的关系区别，供当前任务需要时展开。它不是每个概念的字段定义，也不声称覆盖人的感知、记忆或内部概念形成。
+This reference preserves reusable distinctions between relationships for use when a task needs them. It does not define fields for every concept or claim to cover human perception, memory, or internal concept formation.
 
-## 概念怎样继续工作
+## How concepts support further work
 
-概念让接收者从某种理解进入对象，并沿对象与关系继续判断、想象、行动或创造。名称、标签和一组例句可以成为入口，不能单独代替其中正在起作用的联系。同一对象在不同用途下可有不同作用；当前能表达的部分不必穷尽它。新材料可以改变对象划分、目的和比较本身，而不只回答预设问题。
+A concept gives its recipient a way to understand a subject and continue judging, imagining, acting, or creating through its objects and relationships. Names, labels, and example sentences can provide an entry point; alone, they do not replace the connections that make the understanding work. The same object may play different roles in different uses, and what can currently be expressed need not exhaust it. New material can change how objects are distinguished, the purpose, or the comparison itself, rather than merely answer a predefined question.
 
-文字可传递多维关系，图像可呈现空间，过程可显出时序，程序可展开条件后果。用什么承载取决于要认识什么；完整活动可由多个局部模型、不同媒介与实际使用共同承担。模型不必可执行，也不因可执行就证明其对应现实。
+Text can convey relationships across multiple dimensions, images can show space, processes can reveal sequence, and programs can explore consequences under different conditions. Choose a form according to what needs to be understood. A complete activity may draw on several local models, different media, and actual use. A model need not be executable; being executable does not prove that it corresponds to reality.
 
-## 工作模型
+## The working model
 
-当前材料、经验和目的共同形成对对象与关系的理解；理解组织计划、取材和创造；已成内容及其真实使用又成为材料，返回受影响的理解、计划和实现。目的组织值得展开的关系，新的认识也能改变目的。这里的箭头表示作用关系，不规定所有活动必须走完相同阶段。
+Current material, experience, and purpose together shape an understanding of objects and relationships. That understanding organizes planning, the choice of material, and creation. Completed content and its actual use become further material for revisiting the understanding, plans, and implementation they affect. Purpose helps determine which relationships are worth developing; new understanding can also change the purpose. Arrows in this model indicate how one part affects another. They do not require every activity to pass through the same stages.
 
-“锚点”可作为工作用语：能组织本次几项后续判断、又能在当前对象中展开和重看的关系依据。它不是永久权重或统一评分。先接起相关对象与支撑，再寻找这样的依据；不能先套一个设计题，把剩余材料仅当作回答。
+An **anchor** is a working term for a relational basis that organizes several subsequent judgments in the current task and can be developed and reexamined in the subject itself. It is not a permanent weight or a universal score. First connect the relevant objects and the conditions that support their roles; then look for such a basis. Do not impose a design question first and treat the remaining material solely as an answer to it.
 
-例如，一件工具还存在，但当前不能继续使用，缺口可能是授权、窗口、资源或对象条件。只有认识阻止关系，计划才能决定查哪段材料、改变哪个条件；不能从一个可能配合直接得出必须新增功能。
+For example, a tool may still exist but no longer be usable at the present moment. What is missing may be permission, a usable time window, a resource, or a condition of the object. Understanding what prevents use allows a plan to identify which material to consult or which condition to change. A possible combination alone does not establish that a new feature is required.
 
-## 必要的关系区别
+## Important distinctions between relationships
 
-- **用途与对象。** 某用途失效可留下对象和其他作用；转作研究材料不把原交付改判合格。已成对象可以产生新问题，新需要仍需判断是否属于当前任务。
-- **条件与后续结果。** 同名数值不保证同样作用；取得资源不保证赶得上采用窗口。第一步未直接达成目的，也可能为下一步留下支撑。保持一个局部结果不保证保持整体。
-- **同态共同成立与共同历史。** 在同一状态读到两项属性，可判断该状态同时具有它们；两项目标各自可达，不证明能沿同一条资源历史共同完成。使用还可能改变资源、占用支撑或关闭再次开始的入口。迁移到新机制时重建这些支撑，不能只借用名称和形式。
-- **能力、许可与事件。** 对象能做什么、此刻允许做什么、实际发生了什么以及过去发生过什么分别核对。许可不等于执行；终态资源空闲不自动恢复入口；撤回一种许可不取消对象所有能力。
-- **活动位置。** 选择前的取舍、承诺后的后果与事后研究可以使用同一关系，却有不同窗口。另设可选入口要明示作者条件，不能倒写成原过程已有的选择。
-- **局部与整体。** 某UI组织有价值与整图不协调可同时成立；观者能辨细部不证明人物正在看它。局部成立足以支持局部继续，不能据此认证整体；整体失败也不自动否定所有局部。
-- **材料与形成来路。** 原件支持其可观察范围；历史解释提供待查候选；作者补入构成新对象；反馈说明所报活动。共同放进一份稿件不让它们承担同一种证明。新摘编和新记录有自己的形成来路，不凭叙述层数增加独立见证。
-- **当前取舍与长期要求。** 用户明确要求、作者当前方案、局部排除和永久禁止不是同一关系。替换方案时重看它自己的取舍，承接仍有效的目的和约束；未采用不自动等于被禁止。
+- **Use and object.** Losing one use can leave the object and its other roles intact. Repurposing a deliverable as research material does not make the original delivery satisfactory. A completed object can generate new questions; decide separately whether a new need belongs to the current task.
+- **Conditions and subsequent results.** Values with the same name need not have the same effect. Obtaining a resource does not guarantee that it can be used within the relevant window. A first step that does not directly achieve the purpose may still leave support for a later step. Preserving one local result does not guarantee that the whole is preserved.
+- **Coexisting properties and a shared history.** Observing two properties in one state supports the judgment that they coexist in that state. Two goals being individually reachable does not prove that both can be completed along the same resource history. Use may change resources, occupy shared support, or close the entry point for starting again. When applying an understanding to a new mechanism, rebuild these supporting relationships; names and forms alone are insufficient.
+- **Capabilities, permissions, and events.** Check separately what an object can do, what is currently permitted, what actually happens, and what happened earlier. Permission is not execution. A resource being free at the end does not automatically restore an entry point. Revoking one permission does not remove all of an object's capabilities.
+- **Position within an activity.** A tradeoff before a choice, consequences after commitment, and later research can involve the same relationship but have different windows for action. If the author adds an optional entry point, state its conditions; do not rewrite it as a choice already present in the original process.
+- **Local parts and the whole.** A UI arrangement may be valuable while the whole image remains incoherent. A viewer being able to discern a detail does not establish that a depicted character is looking at it. A supported local result can justify further local work, but cannot certify the whole. Failure of the whole does not automatically invalidate every part.
+- **Material and how it was formed.** Source material supports what can be observed in it; past interpretations provide candidates to investigate; author additions create new objects; feedback describes the activity being reported. Putting them in one document does not give them the same evidential role. New excerpts and records have their own provenance. Additional layers of retelling do not add independent witnesses.
+- **Current choices and lasting requirements.** An explicit user requirement, the author's current proposal, a local exclusion, and a permanent prohibition are different relationships. When replacing a proposal, reexamine its own tradeoffs and retain the purposes and constraints that remain valid. An option not being adopted does not automatically mean it is forbidden.
 
-## 如何取材与返回
+## Choosing material and revisiting understanding
 
-按下一用途选能分开当前解释的材料，不一律追求全文、更多字段或完整历史。局部结果可以排除一个候选，却未必确认其他所有关系；不同路线可产生同一局部结果。材料也可能表明两个贡献能够共存，应相应修正比较。
+For the next use, choose material that can distinguish the current interpretations. Do not always seek full texts, more fields, or a complete history. A local result may rule out one candidate without confirming every other relationship. Different routes can produce the same local result. Material may also show that two contributions can coexist; revise the comparison accordingly.
 
-遇到对象误指，重开相关对应和依赖推导；直接入口受阻时，可沿已知关系找其他入口，再返回原对象核对。共现能提示寻找方向，不能独自证明身份。
+When an object has been misidentified, revisit the identification and the reasoning that depends on it. If the direct route is blocked, follow known relationships to find another entry point, then return to verify it against the original object. Co-occurrence can suggest where to look; it cannot establish identity on its own.
 
-实际反馈先定位被反驳的作用、范围或采用理由。保存反馈来路及必要上下文，区分具体实现错误与理解错误；局部纠正不取消全部关系。共同研究若属于当前任务，真实参与者的思考可改变问题，不能仅当作补资料和验收，也不默认每次工作都要追加真人交互。
+With actual feedback, first locate the role, scope, or reason for adoption that it challenges. Preserve the feedback's source and necessary context. Distinguish a concrete implementation error from an error in understanding; a local correction does not cancel every relationship. When joint research belongs to the current task, a real participant's thinking can change the question, rather than merely supply information or approve a result. This does not make further human interaction a default requirement for every task.
 
-验证时分开事实或操作正确、关系成立、继续推导能力和感官体验。编译、目录结构、文字自洽与独立审查不能相互代证；当前状态、相较基线的变化和任务合格也有不同参照。模型、工具、原件、一般经验与任务提示共同参与，未分离贡献时不归因于本方法的额外帮助。
+In verification, distinguish factual or operational correctness, supported relationships, the ability to reason further, and sensory experience. Compilation, directory structure, textual consistency, and independent review do not stand in for one another. The current state, change from a baseline, and satisfactory task completion also use different reference points. The AI model, tools, sources, general experience, and task prompt all contribute. Where their contributions have not been separated, do not attribute an additional benefit to this method.

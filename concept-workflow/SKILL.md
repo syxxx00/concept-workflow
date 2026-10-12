@@ -1,27 +1,27 @@
 ---
 name: concept-workflow
-description: 从材料建立可继续展开的对象与关系理解，据此制定计划并完成内容，让实际反馈返回相关概念、计划或实现。用于概念整理、设计与创作中的关系推导、理解复查；简单事实查询和无需概念整理的直接编辑通常不需调用。
+description: Develop an understanding of objects and relationships, use it to plan and create, and revise affected understanding or outputs from feedback. Use for conceptual development, design and creative reasoning, or reviewing understanding; usually unnecessary for simple lookups or direct edits.
 ---
 
-# 概念工作方法
+# Concept Workflow
 
-概念是对对象及其关系能够继续展开的理解：它帮助认识当前事物，形成判断、候选和新问题。概念稿、图像、过程或程序是理解的承载物，不等于人的概念本体或模型内部的永久记忆。
+A concept is an understanding of objects and their relationships that can be developed further. It helps make sense of the current subject and form judgments, possibilities, and new questions. A concept document, image, process, or program can carry that understanding; it is not the concept itself in a person's mind or permanent memory inside an AI model.
 
-## 常用工作路径
+## A common working path
 
-**创建或更新概念 → 据概念制定计划 → 据概念与计划完成内容 → 按实际影响返回。** 用这条路径让理解实际改变工作，而不是为每个任务补齐一套文档。已有概念可直接继续使用；明确的小修改可局部完成。进入点、表达形式和展开程度随任务决定，不固定字段，不要求先全盘建模。
+**Create or update concepts → plan from that understanding → create from the concepts and plan → revisit what the results actually affect.** Use this path to make understanding change the work. It does not require a full set of documents for every task. Existing concepts can be used directly; a clear, small change can be made locally. Choose the starting point, form of expression, and depth to suit the task. There are no fixed fields and no requirement to model everything first.
 
-- **建立当前理解。** 从用户目的、相关原件或正在显现的联系进入，接起对象、作用和支撑条件。核对输入对应哪个对象，不能因熟悉某个候选就只查它。保留原件来路、观察范围、作者推论及补入；尚未展开的联系可与明确理解并存。需要展开概念或模型时读[概念与工作模型](references/concept-and-model.md)。
-- **形成有依据的计划。** 沿当前关系找到组织后续工作的依据，比较条件变化后的结果，写出本次要做什么、为何这样做以及必要的检查。计划落实当前目的，也可被新认识改变；作者新设目标和局部取舍不自动成为用户要求。用已有理解开始有限工作，不以穷尽所有历史或完整定义为前提。
-- **完成具体内容。** 依任务交付文字、设计、程序、图像或其他可继续使用的对象；让概念和计划中的关系决定具体选择。补入参数、规则、情节或方案时说明作者贡献，不冒充来源事实。选择实际能表现关系的媒介；文字模型不代实际图像、过程或体验。需要完整路径示范时读[工作案例](references/worked-example.md)。
-- **用结果返回。** 对照实际输出、过程、接收反馈或新材料，判断它改变了目的、对象对应、关系、计划还是实现。先修直接受影响部分，跨层影响有依据再扩大；保留未受影响的作用。实现失误可能只需修实现；关系反例可能要修概念及依赖它的计划。没有失配也可从已成内容继续创造，不强求每轮改概念或开新研究。
+- **Establish the current understanding.** Start from the user's purpose, relevant source material, or a connection that is beginning to emerge. Connect objects, their roles, and the conditions that support those roles. Check which object the input refers to; familiarity with one candidate is not a reason to investigate only that candidate. Keep track of where source material came from, what was observed, and what the author inferred or added. Connections that have not yet been developed can coexist with clearer understanding. Read [Concepts and the working model](references/concept-and-model.md) when further development is needed.
+- **Form a grounded plan.** Follow the current relationships to find a basis for organizing the next work. Compare what follows when conditions change. State what this task will do, why, and what needs checking. A plan serves the current purpose, and new understanding may change it. Goals or local tradeoffs introduced by the author do not automatically become user requirements. Begin bounded work from the understanding available; a complete history or exhaustive definition is not a prerequisite.
+- **Create concrete content.** Deliver text, designs, programs, images, or other objects that can be used further. Let the relationships in the concepts and plan determine concrete choices. Identify author contributions when adding parameters, rules, story elements, or proposals; do not present additions as facts from the source. Choose a medium that can show the relevant relationships. A text model does not substitute for an actual image, process, or experience. Read the [worked example](references/worked-example.md) for a complete path.
+- **Revisit understanding through results.** Compare actual outputs, processes, received feedback, or new material. Determine whether they change the purpose, identification of objects, relationships, plan, or implementation. Correct what is directly affected first; extend changes across levels when there is a reason to do so. Preserve unaffected roles and relationships. An implementation mistake may require only an implementation fix; a counterexample to a relationship may require changes to the concept and the plans that depend on it. Completed content can also support further creation without a mismatch. Do not require a concept revision or a new research project in every cycle.
 
-## 保留关系的范围
+## Preserve the scope of relationships
 
-材料与观察、作者解释、用户偏好、授权及未验证项分别辨认。相似、同名、共现只能提出候选；旧判断和新复述不能自动成为独立观察。历史表达需连同当时用途、当前回看和后续变化理解。
+Distinguish material and observations, author interpretations, user preferences, permissions, and unverified claims. Similarity, shared names, and co-occurrence suggest candidates; they do not establish identity. An old judgment and a new retelling do not automatically constitute independent observations. Understand past statements together with their purpose at the time, the current reassessment, and subsequent changes.
 
-局部价值不抵消整体失配；同一时刻两项成立不证明同一过程能共同完成。能力、当前许可、实际事件及事件历史各有依据。已经承诺的过程不自行重开选择窗口，旧用途失效也不自动取消对象的其他作用。取舍按提出者、情境和范围理解，不把某次实现、未采用方案或作者偏好升为永久要求。更多区别见[概念与工作模型](references/concept-and-model.md)。
+Local value does not cancel a mismatch in the whole. Two properties holding at the same moment do not prove that two goals can be completed within the same process. Capability, current permission, actual events, and event history each need their own basis. Once a process is committed, earlier choices do not reopen on their own. Losing one use does not automatically remove an object's other roles. Interpret a tradeoff in terms of who proposed it, its context, and its scope. Do not turn one implementation, an unused option, or an author's preference into a permanent requirement. See [Concepts and the working model](references/concept-and-model.md) for further distinctions.
 
-输出围绕当前任务，需要可回查的关系时用[关系记录](references/relation-record.md)，不强制填表。参考材料可用于认识；阅读参考不等于获得复制或发布其作品的许可。
+Keep the output centered on the current task. Use the [relationship record](references/relation-record.md) when connections need to be traceable; it is not a mandatory form. Reference material can inform understanding. Reading it does not grant permission to copy or publish the work.
 
-本方法依赖实际模型、可用工具、任务条件及输入材料。文件齐全、规则推导、作品完成或审查通过，只支持各自检查范围；不证明一般概念能力、人的内部理解、弱模型可靠支持或本skill的额外增益。用具体失配和相称材料改进，避免为显示方法有用而制造新步骤。
+This method depends on the actual AI model, available tools, task conditions, and input material. Complete files, rule-based reasoning, finished work, and a passed review support only what each check covers. They do not establish general conceptual ability, a person's internal understanding, reliable support from less capable models, or an additional benefit attributable to this skill. Improve it from concrete mismatches and proportionate evidence. Do not invent steps merely to demonstrate the method's usefulness.

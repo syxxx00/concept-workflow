@@ -1,29 +1,33 @@
 # Concept Workflow
 
-中文 | [English](README.en.md)
+English | [简体中文](README.zh-CN.md)
 
-用概念组织理解、计划、制作与修正的 AI skill。
+An AI skill for developing an understanding of objects and their relationships, using it to guide plans and concrete work, and revising it through feedback.
 
-它从材料中认识对象、关系、用途和条件，让具体取舍有依据，再根据实际结果返回修正。常见路径是“形成概念 → 制定计划 → 制作内容 → 根据反馈修正”；已有概念的局部任务可以从有关位置进入。
+Here, a **concept** is an understanding you can use and develop further. It helps an agent reason, explore possibilities, and form new questions. A common path is **understand → plan → create → revisit**. Existing understanding and small tasks can enter at the relevant point.
 
-## 使用
+## Use it
 
-支持本地 skill 的 Codex 环境可将整个 [concept-workflow](concept-workflow/SKILL.md) 文件夹复制到用户的 `.agents/skills/` 下，保留随附参考。已有同名 skill 时，先比较版本并保留原文件。
+In a Codex environment that supports local skills, copy the entire [concept-workflow](concept-workflow/SKILL.md) folder into your user-level `.agents/skills/` directory, including its references. Compare versions before replacing an existing skill with the same name.
 
-> 使用 $concept-workflow，根据这些原材料形成概念依据，制定有明确交付点的计划，并完成一段具体内容。沿用仍成立的理解，根据实际结果复查；补入的条件请保持可辨认。
+> Use $concept-workflow to develop a conceptual basis from these materials, make a plan with clear deliverables, and create a concrete piece of work. Retain what still holds, review the results, and clearly identify any conditions you add.
 
-也可明确让智能体读取 `concept-workflow/SKILL.md` 和任务材料。图像、音频或代码任务仍需要环境提供相应工具与资料。
+You can also ask an agent to read `concept-workflow/SKILL.md` and your task materials directly. Image, audio, and code tasks need the corresponding tools and source materials. The installable instructions and references are in English; you can state your task in your preferred language.
 
-[教学案例](concept-workflow/references/worked-example.md)展示关系怎样参与推导和局部纠正。
+## See the method at work
 
-## 当前证据
+Two workbench arms can share a base. Both arms being installed does not establish that they can run at once. If completing one task releases the base, a plan can connect the two tasks in sequence. A later requirement to close the workbench after each task changes that plan and its operating instructions.
 
-两个 AI 子代理通过明确路径读取 skill，分别完成一项原创合成任务的初作与后继修正。原题、12 份实际产物及有限结论见 [测试说明](tests/README.md)和[测试结果](tests/RESULTS.md)。
+The [worked example](concept-workflow/references/worked-example.md) shows the full progression, including revised instructions. It is a synthetic teaching example. [Concepts and the working model](concept-workflow/references/concept-and-model.md) explain the method in more detail.
 
-这些测试未验证自动发现与安装、弱模型可靠性、相较不使用 skill 的净增益，或真实现场效果。
+## Evidence
 
-## 来路与许可
+Two AI subagents each completed an initial task and a follow-up revision, producing 12 original documents. The recorded runs used the [Chinese source version](tests/source-skill/SKILL.md) and Chinese prompts. The [test guide](tests/README.md) provides English reading translations of all prompts, artifacts, and scoring criteria; [test results](tests/RESULTS.md) explain the findings.
 
-[方法来路](provenance/method-lineage.md)说明本包从 concept 研究中继承和整理的范围。反馈可以附上任务、材料、实际产物及发生失配的位置。
+The current English skill is a translation of that source version. Translation review does not constitute a new English execution test. The recorded tests did not establish automatic discovery or installation, reliability across models, a net benefit over working without the skill, or real-world effectiveness.
 
-采用 [MIT License](LICENSE)。
+## Origins and license
+
+[Method lineage](provenance/method-lineage.md) explains the research background and related work. Feedback can include your task, materials, actual output, and where the understanding or result failed to fit.
+
+Licensed under the [MIT License](LICENSE).

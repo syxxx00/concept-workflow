@@ -1,31 +1,35 @@
-# 方法来路与独立化范围
+# Method lineage and scope of the standalone package
 
-2026-10-13。本包来自 concept 项目已完成阶段的概念工作方法、工作模型及实际使用研究。原研究旨在使人和 AI 能依据概念理解对象、建模、推导、创造，并由使用中的新认识纠正理解和方法。口吻表达是其中一种用途。
+English | [简体中文](method-lineage.zh-CN.md)
 
-## 保留的作用
+2026-10-13. This package draws on the concept workflow, working model, and usage research from a completed phase of the original concept project. That research aimed to help people and AI use concepts to understand objects, build models, reason, and create, while revising understanding and methods through new insights from use. Expressing something in a person's voice is one possible application.
 
-- 对象身份、属性归属、作用关系和具体条件参与当前判断。
-- 用途与问题可以发展，已有认识可稳定使用；锚点是能组织后续判断、又可具体重看的关系依据。
-- 计划把理解接成当前工作安排，制作仍依据概念处理新的细节。
-- 局部成立与整体目的、读取与实际采用、许可与已经发生的事件分别判断。
-- 跨情境使用须重建新机制的支撑：分别可达、同一安排共同成立、同一过程共同可达和使用后的入口各有条件。
-- 实际失配按影响返回概念、计划、产物或建立方法，保留不受影响的部分。
+## What the package retains
 
-## 为独立分发所做的改变
+- Object identity, attribution of properties, relationships between roles and effects, and specific conditions inform current judgments.
+- Uses and questions can develop while established understanding remains usable. An anchor is a relational basis that organizes subsequent judgments and can be concretely reexamined.
+- A plan turns understanding into the current work arrangement; creation still uses concepts to address new details.
+- Local validity and the overall purpose, reading and actual adoption, and permission and completed events are assessed separately.
+- Use across contexts requires rebuilding the supporting relationships of the new mechanism. Individual reachability, coexistence within one arrangement, joint reachability within one process, and entry points after use each have their own conditions.
+- Actual mismatches lead back to the concepts, plan, output, or method of forming understanding that they affect. Unaffected parts are retained.
 
-原方法直接引用研究库中的概念正文、工作模型及形成案例。本包把独立使用所需的理解整理到 skill 内部参考，将当前项目专属指令改为按任务进入的工作方式。完整20轮研究及第21轮有限调查没有整体搬入，也没有把它们的结果外推为本独立包的使用能力。
+## Changes for standalone distribution
 
-教学案例和测试情境为明确标注的合成材料；本包不复制原私人会话、账号标识、截图、第三方图片或其他工程源码。完整来路留在原研究中，本文件说明继承作用，不用文件数量或字节缩短认证认识改善。
+The original method linked directly to concept documents, the working model, and formation examples in the research library. This package brings the understanding needed for independent use into the skill's own references and replaces project-specific instructions with ways to enter a task according to its needs. The full 20 research rounds and the limited investigations in round 21 have not been imported wholesale, nor have their results been extrapolated into claims about this standalone package's performance.
 
-## 当前验证的范围
+The teaching example and test scenarios are explicitly identified as synthetic material. This package does not reproduce the original private conversations, account identifiers, screenshots, third-party images, or source code from other projects. Full provenance remains in the original research. This document describes what the package carries forward; file counts and byte reductions do not certify improved understanding.
 
-独立包的实际读取、产物和后继修正由本包测试记录承担。原研究的审查和使用证据不自动认证重新整理后的版本。自动触发、未测试的模型、真实玩家感受、概念材料的独立净增益和一般类人概念能力均需相称证据。
+## Scope of the current evidence
 
-## 相关研究
+The package's test records document reading the skill, producing outputs, and revising them after follow-up input. Reviews and usage evidence from the original research do not automatically validate the repackaged version. Automatic selection, untested models, real players' experiences, an independent additional benefit from concept material, and general human-like conceptual ability each require appropriate evidence.
 
-这些相邻研究提供比较来路；本包没有据名称声称实现其具体机制或首次提出概念推理。
+The installable English text is translated from the Chinese version used in those tests. The records refer to that frozen Chinese version in [`tests/source-skill`](../tests/source-skill/SKILL.md). Translation review is not a new execution test of the English skill. See the [test guide](../tests/README.md) for the language and version boundaries.
 
-- [Gruber：Portable Ontology Specifications](https://tomgruber.org/writing/ontolingua-kaj-1993.pdf)：概念关系的共享表示与可移植性。
-- [Gärdenfors：Conceptual Spaces](https://mitpress.mit.edu/9780262071994/conceptual-spaces/)：多质量维度上的概念表示；多种材料并不自动构成数学概念空间。
-- [CoALA](https://arxiv.org/abs/2309.02427)：语言智能体记忆、行动与决策的组织。
-- [Reflexion](https://arxiv.org/abs/2303.11366)：语言反馈与后继行动。本包尚未由对照识别方法的独立净效果。
+## Related research
+
+These neighboring lines of research offer context for comparison. Citing them does not mean this package implements their specific mechanisms or first proposed reasoning through concepts.
+
+- [Gruber: Portable Ontology Specifications](https://tomgruber.org/writing/ontolingua-kaj-1993.pdf): shared representation and portability of conceptual relationships.
+- [Gärdenfors: Conceptual Spaces](https://mitpress.mit.edu/9780262071994/conceptual-spaces/): representing concepts across multiple quality dimensions. Using several kinds of material does not automatically constitute a mathematical conceptual space.
+- [CoALA](https://arxiv.org/abs/2309.02427): organizing memory, action, and decision-making in language agents.
+- [Reflexion](https://arxiv.org/abs/2303.11366): linguistic feedback and subsequent action. Controlled comparisons have not isolated an independent net effect of this package's method.

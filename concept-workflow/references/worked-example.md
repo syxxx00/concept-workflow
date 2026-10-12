@@ -1,90 +1,90 @@
-# 完整工作案例：一座工作台的两项任务
+# Worked example: two tasks on one workbench
 
-这是自包含的教学构造。规则、任务、内容及后续反馈均由示例作者设置；文字轨迹只演示这些规则下的关系，不是现实工作台、真实参与者或skill增益测试。这里展示完整有限路径，不把示例规则迁移为其他任务的要求。
+This is a self-contained teaching example. Its author constructed the rules, task, content, and follow-up feedback. The written traces demonstrate relationships under those rules; they are not evidence from a real workbench, real participants, or a test of the skill's additional benefit. The example shows a complete bounded path. Its rules do not become requirements for other tasks.
 
-## 输入材料与任务
+## Input material and task
 
-任务：根据下列规则写一份简短操作页，让同一座工作台在同一条过程历史中完成左、右两项任务。保留已有硬件。
+Task: Write a short instruction sheet from the rules below, allowing the same workbench to complete both the left and right tasks within one sequence of events. Keep the existing hardware.
 
-材料M1：工作台已装好左臂和右臂，共用一个底座；安装状态在本例操作中不变。
+Material M1: The workbench has an installed left arm and right arm that share one base. Their installed state does not change during this example's operations.
 
-材料M2（初版规则）：
+Material M2 (initial rules):
 
-- 初态许可开放，底座空闲，左、右均未完成。
-- 只有许可开放、底座空闲且相应任务未完成时，才可开始该侧任务；开始会占用底座。
-- 正在进行的一侧完成后，将该侧标为完成并释放底座。
-- 关闭工作台会取消开始许可，不拆臂，不抹掉已完成记录；本版没有重新开放操作。
-- 没有重复任务或新增底座操作。
+- Initially, permission to start is granted, the base is free, and neither task is complete.
+- A task can start only while permission is granted, the base is free, and that task is not already complete. Starting it occupies the base.
+- Completing the task in progress marks that side complete and releases the base.
+- Closing the workbench revokes permission to start. It does not remove the arms or erase completion records. This version has no operation for reopening.
+- There are no operations for repeating tasks or adding bases.
 
-这些规则是全部示例依据。没有硬件尺寸、真实用时或使用体验材料。
+These rules are the entire basis for the example. There is no material about hardware dimensions, real durations, or user experience.
 
-## 概念：接起对象与关系
+## Concept: connect objects and relationships
 
-两臂同时装好，说明同一状态具备两侧安装关系；它不证明两侧能同时开始。开始争用底座，但完成会释放底座，因此可以在同一历史中先完成一侧再完成另一侧。许可是开始条件，关闭是实际改变许可的事件；底座空闲不自动恢复许可。
+Both arms being installed means that both installation relationships hold in the same state. It does not prove that both tasks can start simultaneously. Starting a task competes for the base, but completing it releases the base. One side can therefore complete before the other within the same event history. Permission is a condition for starting; closing is an event that changes permission. A free base does not automatically restore permission.
 
-当前锚点是“完成释放共享支撑，使另一侧可接着开始”。“先左后右”是本操作页作者选择；规则同样允许先右后左，不是任务的永久优先关系。
+The current anchor is: "Completion releases shared support, allowing the other side to start next." Left before right is a choice made by this instruction sheet's author. The rules also allow right before left; there is no permanent task priority.
 
-## 计划：让关系决定具体安排
+## Plan: let relationships determine the arrangement
 
-沿共享底座关系选择左→右的顺序，保留许可直到两项完成，再关闭。操作页写出每次开始前需要满足的条件，并给出完成轨迹，检查两项完成是否发生在同一历史中。无需新增硬件或重复入口；不从已安装直接写成同时运行。
+Use the shared-base relationship to choose a left → right sequence. Keep permission granted until both tasks complete, then close. The instruction sheet states the conditions for each start and supplies a trace to check that both completions occur in the same event history. No new hardware or entry point for repetition is needed. Do not infer simultaneous operation from installation alone.
 
-## 内容：第一版完整操作页
+## Content: the complete first instruction sheet
 
-> **工作台操作页**
+> **Workbench instruction sheet**
 >
-> 初始检查：许可开放，底座空闲，左右任务均未完成。
+> Initial check: Permission to start is granted, the base is free, and neither task is complete.
 >
-> 1. 开始左侧任务。左侧运行期间底座被占用，右侧暂不能开始。
-> 2. 完成左侧任务。保留左侧完成记录，确认底座已释放。
-> 3. 开始右侧任务，再完成右侧任务。
-> 4. 确认左右均有完成记录，底座空闲，然后关闭工作台。
+> 1. Start the left task. It occupies the base while running, so the right task cannot start yet.
+> 2. Complete the left task. Keep its completion record and confirm that the base has been released.
+> 3. Start and then complete the right task.
+> 4. Confirm that both tasks have completion records and that the base is free. Then close the workbench.
 >
-> 关闭后保留硬件和完成记录；本版不提供再次开始入口。
+> Closing preserves the hardware and completion records. This version provides no entry point for starting again.
 
-规则内的完整轨迹：
+Complete trace under the rules:
 
-| 时点 | 许可 | 底座 | 左侧 | 右侧 |
+| Event/state | Permission to start | Base | Left task | Right task |
 |---|---|---|---|---|
-| 初态 | 开放 | 空闲 | 未完成 | 未完成 |
-| 开始左 | 开放 | 左占用 | 运行中 | 未完成 |
-| 完成左 | 开放 | 空闲 | 已完成 | 未完成 |
-| 开始右 | 开放 | 右占用 | 已完成 | 运行中 |
-| 完成右 | 开放 | 空闲 | 已完成 | 已完成 |
-| 关闭 | 关闭 | 空闲 | 已完成 | 已完成 |
+| Initial state | Granted | Free | Incomplete | Incomplete |
+| Start left | Granted | Occupied by left | In progress | Incomplete |
+| Complete left | Granted | Free | Complete | Incomplete |
+| Start right | Granted | Occupied by right | Complete | In progress |
+| Complete right | Granted | Free | Complete | Complete |
+| Close | Revoked | Free | Complete | Complete |
 
-此轨迹支持本例共同完成与最终关闭；不支持重复使用、同时运行或任何现实体验结论。第一版按初版材料成立。
+This trace supports completing both tasks and closing at the end in this example. It does not support repeated use, simultaneous operation, or claims about real experience. The first version is valid under the initial material.
 
-## 反馈：新的实际材料改变接法
+## Feedback: new material changes the connections
 
-示例作者随后提供M3作为修订后的操作约束：每侧完成后必须立即关闭；关闭后仅检查员能在登记检查事件后重新开放。材料新增一个明确的开放入口，没有授权操作者跳过检查。
+The example's author then supplies M3 as a revised operating constraint: Immediately close after each side completes. After closing, only an inspector may reopen the workbench, after recording an inspection event. The material adds an explicit reopening entry point. It does not authorize the operator to skip the inspection.
 
-这使第一版“完成左→直接开始右”不再适用，但不抹掉共享底座、硬件安装或完成记录的理解。发生的是规则修订，不是把第一版倒判为违反当时未知的规则。
+This makes the first version's "complete left → immediately start right" sequence inapplicable. It does not erase the understanding of the shared base, installed hardware, or completion records. This is a rule revision; it does not retroactively make the first version violate rules that were unknown at the time.
 
-概念补入“完成后关闭”和“检查事件→检查员开放”这条支撑；计划改为在两侧之间插入关闭、检查和开放。内容需同步更新。不能只改末尾提示，也不能默认空闲即获许可。若检查员未开放，当前路线停在左侧已完成，不能报告两项完成。
+Add the supporting relationships "close after completion" and "inspection event → inspector reopens" to the concept. Change the plan to insert closing, inspection, and reopening between the tasks, and update the content accordingly. Changing only the final note is insufficient. Do not assume that a free base grants permission. Without the inspector reopening it, this route stops with only the left task complete; it cannot be reported as completing both.
 
-## 返回后的完整内容
+## Complete content after revision
 
-> **工作台操作页：检查入口版**
+> **Workbench instruction sheet: inspection and reopening**
 >
-> 初始检查：许可开放，底座空闲，左右任务均未完成。
+> Initial check: Permission to start is granted, the base is free, and neither task is complete.
 >
-> 1. 开始并完成左侧任务；完成后立即关闭工作台。左侧完成记录与硬件保留。
-> 2. 由检查员登记检查事件并重新开放。确认许可已开放、底座空闲；没有开放时停在此处。
-> 3. 开始并完成右侧任务；完成后立即关闭工作台。
-> 4. 核对左右完成记录和最终关闭状态。
+> 1. Start and complete the left task. Immediately close the workbench after completion. Keep the left completion record and hardware.
+> 2. Have the inspector record the inspection event and reopen the workbench. Confirm that permission to start is granted and the base is free. Stop here if the workbench has not been reopened.
+> 3. Start and complete the right task. Immediately close the workbench after completion.
+> 4. Check both completion records and the final closed state.
 >
-> 本页只安排一次左右任务。两侧之间的重新开放依赖检查员实际操作；最终关闭不提供重复任务许可。
+> This sheet schedules each task once. Reopening between tasks depends on an actual action by the inspector. Closing at the end does not grant permission to repeat tasks.
 
-修订后的完整轨迹：
+Complete revised trace:
 
-`初态 → 开始左 → 完成左 → 关闭 → 登记检查 → 检查员开放 → 开始右 → 完成右 → 关闭`
+`Initial state → start left → complete left → close → record inspection → inspector reopens → start right → complete right → close`
 
-在该轨迹中，两臂全程保留安装关系；两次完成各自释放底座，两次关闭各自取消许可，检查后的开放连接左右任务。最终两项记录都保留，且许可关闭。
+Both arms remain installed throughout this trace. Each completion releases the base; each closure revokes permission. Reopening after inspection connects the left and right tasks. Both completion records remain at the end, and permission is revoked.
 
-计划允许检查员开放，与历史中已经发生开放仍须区分。上面的轨迹是规则下的作者演示；在真实任务中，若只有开放许可而没有事件记录，只能交付可行计划，不能宣称实际完成。
+A plan that allows the inspector to reopen is still distinct from an event history in which reopening actually occurred. The trace above is the author's demonstration under the rules. In a real task, permission to reopen without an event record supports a feasible plan, not a claim of actual completion.
 
-## 相邻用途与未受影响范围
+## Adjacent uses and unaffected scope
 
-若下一任务改为反复运行左侧，现有完成标记会阻止再次开始；需要另行核对重复规则，不能擅自补“复位”。这项新需要不自动成为当前交付的一部分。
+If the next task requires repeatedly running the left side, the existing completion marker prevents another start. Check the repetition rules separately; do not invent a reset operation. This new need does not automatically become part of the current delivery.
 
-若只是把操作页中的“右侧暂不能开始”误写成“右臂已拆除”，直接修内容即可，原概念和计划无需改动。若要求两侧同时运行，则共享底座会反驳当前计划；不能靠文案将先后完成改称同时完成。
+If the instruction sheet merely misstates "the right task cannot start yet" as "the right arm has been removed," correct the content directly; the concept and plan need no change. If both sides are required to run simultaneously, the shared base contradicts the current plan. Wording cannot turn sequential completion into simultaneous completion.

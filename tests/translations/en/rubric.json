@@ -1,0 +1,149 @@
+{
+  "schema_version": 1,
+  "materials": "Both tasks use original synthetic materials. All people, activities, and games are fictional; there are no real accounts or dependencies on external materials.",
+  "purpose": "A standalone skill-use check within a bounded activity. Only relationships, arrangements, implementation, and follow-up corrections observable in the task artifacts are assessed. This round has no comparison without the skill and does not estimate net benefit, general effects, or causal gains.",
+  "delivery_protocol": {
+    "first_input_only": [
+      "fixtures/resonance_card/task.md",
+      "fixtures/shared_adapter/task.md"
+    ],
+    "withheld_until_first_delivery": [
+      "fixtures/resonance_card/followup.md",
+      "fixtures/shared_adapter/followup.md"
+    ],
+    "reviewer_only": "tests/rubric.json",
+    "run_scope": "Each recipient first completes their own task.md, then receives followup.md from the same directory and revises the actual artifacts. The target for the two recipients' initial and follow-up work combined is within 20 minutes. Only documents are required: no network access, physical equipment, feedback from real people, or engineering deployment.",
+    "record": "Save both the initial and follow-up artifacts. Compare their actual contents when scoring. Do not score only from a recipient's claims about what they did."
+  },
+  "scoring": {
+    "scale": {
+      "0": "Missing, conflicts with the materials, or consists only of vague assertions with no verifiable implementation.",
+      "1": "Partly sound, but omits an important relationship that would change actual handling or use, or implementation/correction is incomplete.",
+      "2": "The relevant facts constrain one another and genuinely affect decisions. The actual artifacts can be carried out, and there is no substantive error in this dimension."
+    },
+    "dimensions_per_task": 6,
+    "max_score_per_task": 12,
+    "review_method": "First check the concrete output artifact, then check whether CONCEPT.md and PLAN.md explain or support the same decision. Accept any workable organization, naming, and document structure. Do not score by matching templates, keywords, headings, or exact wording. Do not deduct points for the absence of fixed steps, an exhaustive concept list, or lengthy explanations.",
+    "evidence_rule": "Every nonzero score must cite a specific artifact location or a verifiable passage. A score of 2 must show how facts affected arrangements or handling; merely restating facts is insufficient.",
+    "unnecessary_human_gate": "Handling that can be determined from the supplied materials should not stop to request confirmation. Only permission changes that the materials explicitly reserve for another person count as necessary human involvement. It is enough to record a pending request and continue producing artifacts usable under the current conditions. A genuine omission in the source may be recorded or referred to the designer for clarification. Provided all still-determinable deliverables are completed, recording this omission is not treated as an unnecessary blocker."
+  },
+  "tasks": [
+    {
+      "id": "resonance_card",
+      "input": "fixtures/resonance_card/task.md",
+      "followup": "fixtures/resonance_card/followup.md",
+      "expected_artifacts": [
+        "CONCEPT.md",
+        "PLAN.md",
+        "RULES.md"
+      ],
+      "initial_oracle": {
+        "card_rules": "For a manual operation of Resonator, the current operator first pays 3 charge. An entry is added to the pending list only on success. Echo Plate observes only the successful addition of a manual-operation entry for another device operated by its own current operator; its automatic entry is nonrecursive. Unexecuted gains cannot be used to pay in advance. The beneficiary of an entry already added to the list remains the operator recorded at entry creation. Removing the source from the table or changing its current operator later does not cancel the entry or redirect its gain. The owner and the current operator must not be conflated.",
+        "case_a": "Luo pays from 7 down to 4, then pays down to 1. Both operations can succeed. Each echo is placed at the top when created. The second echo is created last and therefore ends at the top of the final pending list. The original materials do not specify the insertion position for manual-operation entries, so a single complete order among the two manual-operation entries and the first echo cannot be specified. The omission may be explicitly retained, or multiple compatible arrangements may be explained. This omission does not affect the addition across the entire list: Luo finishes with 13 and Lan with 0. An insertion position added by an author must not be presented as a confirmed rule.",
+        "case_b": "Luo pays from 4 down to 1. Removing Resonator does not cancel content already added to the pending list. Both the echo's +1 and Resonator's +5 go to Luo. Luo finishes with 7 and Lan with 0.",
+        "case_c": "Lan pays from 4 down to 1. Lan's operation does not activate Luo's Echo Plate. The subsequent change of current operator does not change the beneficiary of the old entry. Lan gains 5, finishing with 6, while Luo has 2."
+      },
+      "followup_oracle": {
+        "changed_case_a": "The new starting situation gives Luo 5 charge. The first successful payment leaves 2. That is insufficient to pay the second cost of 3, so the second operation cannot be added to the pending list and does not add a second echo entry. Delete the second operation incorrectly recorded on site and the echo incorrectly recorded for it. The first echo and Resonator entry are valid. The later removal of Resonator still does not cancel those first entries. After carrying out echo +1 and Resonator +5, Luo has 8 and Lan has 0.",
+        "preservation": "The handling and results for Cases B and C remain correct. The effects of the two cards and the basic rules for payment and adding entries do not change. Related explanations may be revised to prevent misreading, but do not grant compensating charge, retroactively approve the failed operation, or add gameplay."
+      },
+      "dimensions": [
+        {
+          "id": "relationships_used",
+          "check": "CONCEPT.md, or an explanation clearly corresponding to it, uses relationships among current charge, payment timing, entry creation/execution, operator/owner, and existing entries to organize the rules. It does more than sort original terms or card text into separate sections.",
+          "two_point_evidence": "For example, it can explain why an unexecuted echo cannot fund payment in advance, or why the borrower rather than the owner receives a gain from an existing entry. Wording and organization are unrestricted."
+        },
+        {
+          "id": "plan_to_artifact",
+          "check": "The arrangements in PLAN.md correspond to the explanations and handling of the practice records in RULES.md. The descriptions of both cards and the operating procedure can be used directly by the facilitator; they do not merely promise to check the rules.",
+          "two_point_evidence": "The plan's key arrangements are implemented in the document and sufficiently distinguish an attempt, successful payment, automatic entry creation, and execution. If the insertion position for manual-operation entries is unspecified, that local omission may be explicitly retained while all determinate handling is completed. A labeled conditional example is not promoted to a confirmed rule."
+        },
+        {
+          "id": "initial_execution",
+          "check": "For all three initial practice records, permissions/prohibitions, top-placement relationships determinable under the materials, trigger counts, and charge totals match initial_oracle. No single complete order is required when the source does not specify the manual-entry insertion position.",
+          "two_point_evidence": "Case A 13/0, Case B 7/0, Case C 2/6. Each echo is placed at the top when added to the pending list. The reasoning does not borrow future charge, create recursive echoes, or fill the unspecified manual-entry insertion position without evidence."
+        },
+        {
+          "id": "attribution_and_limits",
+          "check": "Correctly distinguishes the source, owner, current operator, and operator recorded at entry creation. Moving the source or changing its operator affects only applicable new operations; it does not wrongly cancel, redirect, or add existing entries.",
+          "two_point_evidence": "Case B keeps existing entries, and Case C gives Luo neither an echo nor the gain. The rules do not grant the owner extra operating permission as a result."
+        },
+        {
+          "id": "feedback_implemented",
+          "check": "The follow-up makes actual changes to Case A and affected explanations. It handles the failed attempt and existing entries according to the new starting situation and removal record, rather than delivering only a paragraph of suggested revisions.",
+          "two_point_evidence": "The final Case A explicitly states that the second attempt fails, both incorrectly recorded entries must be removed, and the first two entries remain valid. The result is Luo 8, Lan 0."
+        },
+        {
+          "id": "correction_scope_and_agency",
+          "check": "Unaffected Cases B and C and the card effects remain correct. No compensation mechanism is invented, and normal handling already determined by the rules is not handed back to the designer or players to await confirmation.",
+          "two_point_evidence": "The revision scope follows the actual impact. Local changes or reasonable reorganization are acceptable, but unrelated results remain unchanged and the delivery is immediately usable."
+        }
+      ],
+      "critical_errors": [
+        "Paying from unexecuted gains or allowing the second operation when charge is insufficient.",
+        "Canceling an existing entry because its source is removed, or redirecting an existing gain because of ownership or a later change of current operator.",
+        "Treating Echo Plate's automatic entry as a manual operation and producing infinite echoes."
+      ]
+    },
+    {
+      "id": "shared_adapter",
+      "input": "fixtures/shared_adapter/task.md",
+      "followup": "fixtures/shared_adapter/followup.md",
+      "expected_artifacts": [
+        "CONCEPT.md",
+        "PLAN.md",
+        "DISPLAY.md"
+      ],
+      "initial_oracle": {
+        "feasible_arrangement": "A typical feasible arrangement is a locked Blue Box holding a fixed entrance sign and White Box providing the two sides of the route display throughout the opening period. The two frames use all 4 base clamps. Ning installs them after 10:40, removes them after 11:30, and returns each on time. The folding display board may be kept as a backup. Accept other arrangements that simultaneously meet the requirements for readability throughout the period, visibility/access to both routes, permissions, quantities, and deadlines. The initial materials already allow the wish for visitors to flip the display to be fulfilled; it must not be wrongly described as impossible. If a different format is chosen, explain how that wish is handled rather than silently dropping it.",
+        "content": "The entrance uses the supplied content. Short route: blue circle, model table, about 6 minutes. Quiet route: yellow triangle, reading corner, about 9 minutes, quiet voices. A flippable display has an understandable prompt indicating the other side. A fixed route display makes both routes readable at the same time.",
+        "limits": "Blue Box must remain locked and fixed in use; neither visitors nor Ning may turn it into a flippable display. White Box's permission allows visitors to flip it, but only during its borrowing period. Identical physical models do not imply identical permissions. The paper and base clamps remain the organizer's property and must be removed before the borrowed boxes are returned."
+      },
+      "followup_oracle": {
+        "permissions_and_time": "From the new record onward, only Ning may flip White Box; visitors may not flip it themselves. It cannot continue displaying this activity from 11:10, even though it will not be physically collected until 11:18. Remaining on site or an unchanged inventory count cannot be treated as authorization to continue using it.",
+        "feasible_fallback": "A landscape A4 sheet can be placed on the organizer's own folding display board before opening, showing both routes simultaneously, without using White Box. Alternatively, Ning may demonstrate White Box before 11:10, with the folding display board prepared in advance and the switch completed before the display permission expires. The entrance may continue using locked Blue Box. Other arrangements satisfying the current permissions and display for the full opening period are allowed. Blue Box cannot be used to provide visitor flipping.",
+        "content_change": "Only the quiet-route marker changes to a green square. All other route information, the short route, and entrance content remain unchanged. If a fixed route display is used, the actual printable text and operating prompts must support reading both routes simultaneously and must not still instruct visitors to flip the display.",
+        "human_decision": "If visitor flipping of White Box or continued use after 11:10 is still desired, Teacher Wu must give written consent covering the relevant operator and usage period. Ning or Zhou He cannot approve it themselves. Using Blue Box as a flippable display instead would require Director Ye's written consent. An accurate pending request may be provided, but a usable arrangement under current permissions must be delivered before any new consent is received. No further confirmation is needed for the organizer's own folding display board or installation already permitted in the source.",
+        "preservation": "Blue Box's fixed entrance use, the short-route content, ownership, and the activity period are unchanged. Existing unaffected content should be retained. The recipient need not be forced to keep the same physical arrangement, provided the changes have a basis in actual impact."
+      },
+      "dimensions": [
+        {
+          "id": "relationships_used",
+          "check": "CONCEPT.md or the corresponding artifacts connect material form/capacity, owner, permitted use/operator, and time periods with the goals of the two signs. These relationships actually affect arrangements, rather than being copied into separate inventory and schedule lists.",
+          "two_point_evidence": "The two boxes of the same model are assigned uses consistent with their respective permissions, with an explanation of why the number available cannot alone determine what can be done. No prescribed concept name is required."
+        },
+        {
+          "id": "plan_to_artifact",
+          "check": "The arrangements in PLAN.md are implemented in DISPLAY.md as actual printable text and materials, installation, and return instructions that Ning can follow.",
+          "two_point_evidence": "Size and one-sided/two-sided printing suit their holders, no more than 4 base clamps are used, and the action sequence and timing are executable. The delivery goes beyond vague suggestions."
+        },
+        {
+          "id": "initial_execution",
+          "check": "The initial artifacts cover 11:00–11:30, contain correct content and routes for both signs, and give visitor prompts for flipping or fixed display that match the actual format.",
+          "two_point_evidence": "Visitors can read both routes without asking anyone. Paper is removed from the borrowed boxes and each is returned by its own deadline. All feasible arrangements are accepted; the typical arrangement is not required."
+        },
+        {
+          "id": "attribution_and_limits",
+          "check": "The specific actions respect Blue Box's fixed use, White Box's permission for visitors to flip it, Ning's installation/removal permission, and ownership. Identical hardware, ownership of the paper, or being on duty is not treated as permission for uses of a borrowed box.",
+          "two_point_evidence": "There are no substantive errors about who may operate what, when it may be used, or which items are returned to whom."
+        },
+        {
+          "id": "feedback_implemented",
+          "check": "The follow-up changes the actual printable text and operating arrangements. The quiet route uses a green square. White Box is no longer flipped by visitors and leaves this activity's display from 11:10. The organizer's own materials keep both routes simultaneously readable for the remaining opening period.",
+          "two_point_evidence": "This is more than a reminder in a note: the new printable version, prompts, material allocation, and timing are mutually compatible. The entrance and short route remain correct."
+        },
+        {
+          "id": "correction_scope_and_agency",
+          "check": "Retains unaffected content and supplies an immediately usable arrangement under existing permissions. If the wish for visitor flipping is retained, the required change is referred to the actual lender, explicitly remains unapproved, and does not block work while awaiting a reply. No separate approval is requested for the organizer's own materials.",
+          "two_point_evidence": "The request identifies the permission-granting person, operator/use, and time period beyond the original permission. Alternatively, the document explicitly adopts an arrangement within existing permissions and states the consent needed for the original wish. A desired goal is not treated as an established permission."
+        }
+      ],
+      "critical_errors": [
+        "Blue Box is not locked or is arranged as a display that visitors or Ning may flip.",
+        "The follow-up still allows visitors to flip White Box, or treats its physical collection at 11:18 as the end of display permission.",
+        "The follow-up does not keep both routes readable from 11:10–11:30, or retains the yellow triangle or prompts for visitors to flip the display.",
+        "Using a borrowed box with a new operator, use, or time period without new written permission, or waiting for permission so that an already-feasible display cannot be delivered."
+      ]
+    }
+  ]
+}

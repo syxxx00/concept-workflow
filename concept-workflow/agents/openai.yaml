@@ -1,6 +1,6 @@
 interface:
-  display_name: "概念、计划与内容"
-  short_description: "从对象与关系形成理解，据此制定计划、完成内容，并按实际影响返回纠正"
-  default_prompt: "使用 $concept-workflow 从当前材料建立或更新概念，据此制定计划并完成内容，让实际反馈返回受影响的理解和实现。"
+  display_name: "Concept Workflow"
+  short_description: "Understand relationships, plan, create, and revise"
+  default_prompt: "Use $concept-workflow to develop or update concepts from the current material, plan and create from that understanding, and revise what the actual feedback affects."
 policy:
   allow_implicit_invocation: true
